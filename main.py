@@ -4,7 +4,7 @@ import openpyxl
 import numpy as np
 import openai
 
-openai.api_key = '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'
+openai.api_key = ''
 def get_response_from_gpt(prompt):
     try:
         response = openai.ChatCompletion.create(
@@ -55,4 +55,5 @@ plt.xlabel('Значение')
 plt.ylabel('Частота')
 
 plt.savefig('histogram.png')
+
 
